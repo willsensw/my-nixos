@@ -198,4 +198,15 @@
       };
     };
   };
+
+  xdg.configFile = {
+    "niri".source = ./dotfiles/niri;
+    "ranger".source = ./dotfiles/ranger;
+    "waybar".source = ./dotfiles/waybar;
+    "kitty".source = ./dotfiles/kitty;
+    "nvim".source = ./dotfiles/nvim;
+    "fuzzel".source = ./dotfiles/fuzzel;
+    "swaync".source = ./dotfiles/swaync;
+    "wlogout".source = ./dotfiles/wlogout;
+  };
 }
