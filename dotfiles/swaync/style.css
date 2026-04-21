@@ -1,0 +1,205 @@
+/* =============================================================================
+   SWAYNC STYLE - MONOCHROME & DEEP BLUE (CYBERPUNK GLOW)
+   ============================================================================= */
+
+/* --- Global Font & Base --- */
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+}
+
+/* --- The Main Window (The HUD) --- */
+/* The "!important" forces it to override any red system themes */
+.control-center {
+  background: rgba(15, 15, 15, 0.95) !important;
+  border: 2px solid #5294e2 !important;       /* Deep Sky Blue Border */
+  border-radius: 12px;
+  
+  /* THE GLOW: Matches Waybar/Niri */
+  box-shadow: 0 0 15px 2px rgba(82, 148, 226, 0.4) !important; 
+}
+
+/* --- The Widget Container --- */
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  opacity: 0.5;
+}
+
+/* --- Title Widget ("Notifications" & Clear All) --- */
+.widget-title {
+  color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  background: #1a1b26; /* Dark Blue-Grey Header */
+  border-radius: 8px;
+}
+
+.widget-title > button {
+  background: #333333;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.widget-title > button:hover {
+  background: #5294e2; /* Blue on hover */
+  color: #000000;
+}
+
+/* --- DND Toggle (Do Not Disturb) --- */
+.widget-dnd {
+  background: #1a1b26;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.widget-dnd > switch {
+  background: #333333;
+  border-radius: 10px;
+}
+
+.widget-dnd > switch:checked {
+  background: #5294e2; /* Blue when active */
+  border: 1px solid #5294e2;
+}
+
+.widget-dnd > switch slider {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* --- Volume & Brightness Sliders --- */
+.widget-volume,
+.widget-backlight {
+  background: #1a1b26;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.widget-volume trough,
+.widget-backlight trough {
+  background: #333333;
+  border-radius: 6px;
+}
+
+.widget-volume highlight,
+.widget-backlight highlight {
+  background: #5294e2; /* Blue Progress Bar */
+  border-radius: 6px;
+}
+
+/* --- Media Player (MPRIS) --- */
+.widget-mpris {
+  background: #1a1b26;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  color: #ffffff;
+  border: 1px solid #333333;
+}
+
+.widget-mpris-player {
+  padding: 5px;
+  margin: 0;
+}
+
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #5294e2;
+}
+
+.widget-mpris-subtitle {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+/* --- Individual Notifications --- */
+.notification-row {
+  outline: none;
+  margin: 10px;
+}
+
+/* Standard Notification */
+.notification {
+  background: #1a1b26; 
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 10px;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+/* Notification Hover Effect */
+.notification:hover {
+  border-color: #5294e2;
+  box-shadow: 0 0 8px 1px rgba(82, 148, 226, 0.3);
+}
+
+/* --- CRITICAL Notification Override (No Red!) --- */
+.notification.critical {
+  background: #1a1b26 !important;
+  border: 1px solid #5294e2 !important; /* Blue Border instead of Red */
+  box-shadow: 0 0 10px 2px rgba(82, 148, 226, 0.5) !important;
+  color: #ffffff;
+}
+
+.notification.critical .summary {
+  color: #5294e2 !important; /* Blue Title */
+  font-weight: 900;
+}
+
+/* --- Notification Actions --- */
+.notification-default-action,
+.notification-action {
+  padding: 4px;
+  margin: 0;
+  border-top: 1px solid #333333;
+  background: transparent;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  background: #5294e2;
+  color: #000000;
+}
+
+.summary {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5294e2; /* Blue Title */
+}
+
+.time {
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.body {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+/* The "Close" button on a notification */
+.close-button {
+  background: transparent;
+  color: #ffffff;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.close-button:hover {
+  background: #FF4444; /* Keep red ONLY for the X button to close */
+  color: #ffffff;
+}

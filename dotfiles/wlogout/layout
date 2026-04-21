@@ -1,0 +1,36 @@
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "⏻",
+    "keybind" : "s"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "",
+    "keybind" : "r"
+}
+{
+    "label" : "logout",
+    "action" : "uwsm stop",
+    "text" : "󰍃",
+    "keybind" : "e"
+}
+{
+    "label" : "lock",
+    "action" : "uwsm app -- hyprlock",
+    "text" : "",
+    "keybind" : "l"
+}
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "󰤄",
+    "keybind" : "u"
+}
+{
+    "label" : "firmware",
+    "action" : "systemctl reboot --firmware-setup",
+    "text" : "",
+    "keybind" : "f"
+}

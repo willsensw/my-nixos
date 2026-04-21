@@ -1,0 +1,52 @@
+/* --- Window Background --- */
+window {
+    background-color: rgba(10, 10, 10, 0.85); /* Dark, semi-transparent backing */
+}
+
+/* --- The Buttons (Glass Panels) --- */
+button {
+    background-color: #1a1b26; /* Dark Blue-Grey Base */
+    border: 2px solid #333333; /* Mechanical Grey Border */
+    border-radius: 12px;
+    color: #e0e0e0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 32px; /* Large Icon Size */
+    
+    /* Spacing between buttons */
+    margin: 10px;
+    
+    /* Smooth Transition for the Hover Glow */
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s;
+}
+
+/* --- Hover Effect (The "Cyberpunk" Blue Glow) --- */
+button:hover {
+    background-color: #1a1b26;
+    border-color: #5294e2; /* Deep Sky Blue Border */
+    color: #5294e2; /* Icon turns Blue */
+    
+    /* The Glow: Same technique as Waybar */
+    box-shadow: 0 0 15px 2px rgba(82, 148, 226, 0.4); 
+}
+
+/* --- Active/Click Effect --- */
+button:active {
+    background-color: #5294e2;
+    color: #000000;
+}
+
+/* --- Specific Button Tweaks (Optional) --- */
+
+/* Make Shutdown Dangerously Red on Hover (Safety Feature) */
+#shutdown:hover {
+    border-color: #FF4444;
+    color: #FF4444;
+    box-shadow: 0 0 15px 2px rgba(255, 68, 68, 0.4);
+}
+
+/* Make Reboot Amber/Yellow */
+#reboot:hover {
+    border-color: #FFD700;
+    color: #FFD700;
+    box-shadow: 0 0 15px 2px rgba(255, 215, 0, 0.4);
+}
