@@ -91,6 +91,7 @@
   };
 
   xdg.configFile = {
+	"fastfetch".source = ./dotfiles/fastfetch;
     "ranger".source = ./dotfiles/ranger;
     "kitty".source = ./dotfiles/kitty;
     "nvim".source = ./dotfiles/nvim;
