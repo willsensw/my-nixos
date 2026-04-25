@@ -3,7 +3,7 @@
 {
   services.xserver.displayManager.lightdm = {
     enable = true;
-    background = pkgs.nixos-artwork.wallpapers.nineish-dark-gray.gnomeFilePath; # Or your custom wallpaper path
+    background = /home/beimao/my-nixos/wpp.jpg;
   
       greeters.slick = {
       enable = true;
