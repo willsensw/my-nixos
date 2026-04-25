@@ -7,9 +7,9 @@
 		syntaxHighlighting.enable = true;
 		enableCompletion = true;
 
-    interactiveShellInit = ''
-      fastfetch
-    '';
+    	interactiveShellInit = ''
+      		fastfetch
+    	'';
 
 		shellAliases = {
 			ollama-on = "sudo systemctl start ollama";

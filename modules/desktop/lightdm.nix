@@ -12,7 +12,7 @@
       cursorTheme.name = "Bibata-Modern-Classic";
       cursorTheme.size = 24;
       font.name = "Inter 10";
-      draw-user-backgrounds = true; # Shows the user's specific wallpaper if set
+      draw-user-backgrounds = true;
     };
   };
 }

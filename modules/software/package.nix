@@ -12,14 +12,13 @@
 		neovim
 		git
 		btop
-		wget
     	exfatprogs
     	sbctl
     	lon
     	openboard
 	
 		#TERMINAL SHOWCASE
-    	kitty
+    	alacritty
 		fastfetch
 		cmatrix
 		cava

@@ -24,6 +24,7 @@
       ./modules/software/ollama.nix
       ./modules/software/package.nix
       ./modules/software/zen.nix
+      ./modules/software/kicad.nix
 
       # Others
       ./modules/others/flatpak.nix
@@ -48,6 +49,7 @@
 		networkmanager.enable = true;
 		hostName = "nixos";
 	};
+  
   nix.settings.trusted-users = [
     "root"
     "beimao"

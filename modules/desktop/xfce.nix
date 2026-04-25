@@ -18,6 +18,6 @@
     ffmpegthumbnailer
     poppler
     freetype
-    xfce.thunar-archive-plugin
+    thunar-archive-plugin
   ];
 }

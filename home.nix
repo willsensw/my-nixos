@@ -1,39 +1,43 @@
 { config, pkgs, ... }:
 
 {
-	home = {
-		username = "beimao";
-		homeDirectory = "/home/beimao";
-		stateVersion = "25.11";
-		sessionVariables = {
-    			GTK_THEME = "Orchis-Red-Dark";
-  		};
-		pointerCursor = {
-    			name = "Bibata-Modern-Ice";
-    			package = pkgs.bibata-cursors;
-    			size = 24;
-    			gtk.enable = true;
-    			x11.enable = true;
- 	 	};
-	};
+  home = {
+    username = "beimao";
+    homeDirectory = "/home/beimao";
+    stateVersion = "25.11"; 
+    sessionVariables = {
+      GTK_THEME = "Orchis-Dark";
+      XCURSOR_THEME = "Bibata-Modern-Ice";
+      XCURSOR_SIZE = "24";
+    };
+    pointerCursor = {
+      name = "Bibata-Modern-Ice";
+      package = pkgs.bibata-cursors;
+      size = 24;
+      gtk.enable = true;
+      x11.enable = true;
+    };
+  };
 
-	gtk = {
-   		enable = true;
-    		theme = {
-      			name = "Orchis-Dark";
-            		package = pkgs.orchis-theme;	
-    		};
-		gtk4.theme = config.gtk.theme;
-    		iconTheme = {
-      			name = "Papirus-Dark";
-      			package = pkgs.papirus-icon-theme;
-    		};	
-  	};
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Orchis-Dark";
+      package = pkgs.orchis-theme;
+    };
+    gtk4.theme = config.gtk.theme;
+    iconTheme = {
+      name = "Papirus-Dark";
+      package = pkgs.papirus-icon-theme;
+    };
+  };
 
-	dconf.settings = {
+  dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       gtk-theme = "Orchis-Dark";
+      cursor-theme = "Bibata-Modern-Ice";
+      icon-theme = "Papirus-Dark";
     };
   };
 
@@ -93,7 +97,7 @@
   xdg.configFile = {
     "fastfetch".source = ./dotfiles/fastfetch;
     "ranger".source = ./dotfiles/ranger;
-    "kitty".source = ./dotfiles/kitty;
+    "kitty".source = ./dotfiles/alacritty;
     "nvim".source = ./dotfiles/nvim;
   };
 }
