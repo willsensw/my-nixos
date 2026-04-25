@@ -2,28 +2,37 @@
 
 {
   imports =
-  [
-    ./hardware-configuration.nix
-		./services.nix
-		./flatpak.nix
-    ./package.nix
-    ./printer.nix
-    ./blender.nix
-    ./lightdm.nix
-    ./nvidia.nix
-    ./ollama.nix
-    ./python.nix
-		./thunar.nix
-    ./stm32.nix
-    ./xfce.nix
-    ./game.nix
-		./boot.nix
-    ./nvim.nix
-    ./font.nix
-    ./user.nix
-		./zsh.nix
-		./zen.nix
-  ];
+    [
+      # Core Files
+      ./hardware-configuration.nix
+      ./user.nix
+
+      # Desktop
+      ./modules/desktop/boot.nix
+      ./modules/desktop/lightdm.nix
+      ./modules/desktop/thunar.nix
+      ./modules/desktop/xfce.nix
+      ./modules/desktop/zsh.nix
+
+      # Hardware
+      ./modules/hardware/nvidia.nix
+      ./modules/hardware/printer.nix
+
+      # Software
+      ./modules/software/blender.nix
+      ./modules/software/game.nix
+      ./modules/software/nvim.nix
+      ./modules/software/ollama.nix
+      ./modules/software/package.nix
+      ./modules/software/zen.nix
+
+      # Others
+      ./modules/others/flatpak.nix
+      ./modules/others/font.nix
+      ./modules/others/python.nix
+      ./modules/others/services.nix
+      ./modules/others/stm32.nix
+    ];
 
   boot = {
     loader = {

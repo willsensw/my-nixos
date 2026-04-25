@@ -3,7 +3,7 @@
 {
   services.xserver.displayManager.lightdm = {
     enable = true;
-    background = ./wpp.jpg;
+    background = ../../assets/wpp.jpg;
   
       greeters.slick = {
       enable = true;
