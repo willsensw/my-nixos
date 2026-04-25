@@ -5,7 +5,7 @@
     enable = true;
     background = ../../assets/wpp.jpg;
   
-      greeters.slick = {
+    greeters.slick = {
       enable = true;
       theme.name = "Orchis-Dark-Compact";
       iconTheme.name = "Papirus-Dark";

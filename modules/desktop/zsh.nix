@@ -16,11 +16,10 @@
 			ollama-off = "sudo systemctl stop ollama";
 			llama = "ollama run llama3.1:8b";
 
-			rebuild = lib.mkForce "nixos-rebuild switch --flake /home/beimao/my-nixos#default --use-remote-sudo";
 			garbage = "sudo nix-collect-garbage -d";
 			optimise = "sudo nix-store --optimise";
 
-      cmatrix = "cmatrix -b -a -s -C blue";
+      		cmatrix = "cmatrix -b -a -s -C blue";
 		};
 	};
 	users.defaultUserShell = pkgs.zsh;

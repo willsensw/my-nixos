@@ -10,17 +10,16 @@
 		#Mix
 		vim
 		neovim
-		vscode
 		git
 		btop
 		wget
-    exfatprogs
-    sbctl
-    lon
-    openboard
+    	exfatprogs
+    	sbctl
+    	lon
+    	openboard
 	
 		#TERMINAL SHOWCASE
-    kitty
+    	kitty
 		fastfetch
 		cmatrix
 		cava
@@ -37,7 +36,7 @@
 		#Electronics
 		thonny
 		arduino-ide
-    fritzing
+    	fritzing
 
 		#KICAD
 		kicad

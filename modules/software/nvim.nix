@@ -12,22 +12,22 @@
 	};
 
 	programs.nix-ld = {
-    		enable = true;
-    		libraries = with pkgs; [
-      			stdenv.cc.cc
-      			zlib
-      			openssl
-      			curl
-      			glib
-      			util-linux
-      			glibc
-      			icu
-    		];
+    	enable = true;
+    	libraries = with pkgs; [
+      		stdenv.cc.cc
+      		zlib
+      		openssl
+      		curl
+      		glib
+      		util-linux
+      		glibc
+      		icu
+    	];
   	};
 
 	environment.systemPackages = with pkgs; [
-    		ripgrep
-    		fd
+    	ripgrep
+    	fd
 		gnumake
 		nodejs_22
 		cargo

@@ -18,6 +18,6 @@
 		inter-nerdfont
 		font-awesome
 		material-symbols
-    		nerd-fonts.caskaydia-cove
+    	nerd-fonts.caskaydia-cove
 	];
 }
