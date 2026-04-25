@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 {
   services.xserver.displayManager.lightdm = {
     enable = true;
-    background = /home/beimao/my-nixos/wpp.jpg;
+    background = ./wpp.jpg;
   
       greeters.slick = {
       enable = true;
