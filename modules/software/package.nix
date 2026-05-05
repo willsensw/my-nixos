@@ -16,6 +16,7 @@
     	sbctl
     	lon
     	openboard
+		zoom-us
 	
 		#TERMINAL SHOWCASE
     	alacritty
