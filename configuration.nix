@@ -9,8 +9,7 @@
 
       # Desktop
       ./modules/desktop/boot.nix
-      ./modules/desktop/lightdm.nix
-      ./modules/desktop/xfce.nix
+      ./modules/desktop/gnome.nix
       ./modules/desktop/zsh.nix
 
       # Hardware
