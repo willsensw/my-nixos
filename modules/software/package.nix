@@ -20,6 +20,7 @@
 	
 		#TERMINAL SHOWCASE
     	alacritty
+		kitty
 		fastfetch
 		cmatrix
 		cava
