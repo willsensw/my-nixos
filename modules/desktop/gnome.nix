@@ -20,12 +20,15 @@
         atomix
     ]);
 
-    environment.systemPackages = with pkgs; [
+    environment.systemPackages = let
+        gE = pkgs.gnomeExtensions;
+    in
+    with pkgs; [
         gnome-tweaks
-        gnomeExtensions.user-themes
-        gnomeExtensions.appindicator
-        gnomeExtensions.dash-to-dock
-        gnomeExtensions.blur-my-shell
+        gE.user-themes
+        gE.appindicator
+        gE.dash-to-dock
+        gE.blur-my-shell
     ];
 
     environment.sessionVariables = {
