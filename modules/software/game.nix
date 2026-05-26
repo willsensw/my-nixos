@@ -13,5 +13,6 @@
     mangohud
     protonup-qt
     heroic
+    lutris
   ];
 }
