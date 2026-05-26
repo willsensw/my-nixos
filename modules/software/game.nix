@@ -14,5 +14,6 @@
     protonup-qt
     heroic
     lutris
+    pvzge
   ];
 }
