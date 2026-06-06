@@ -19,7 +19,7 @@
       version = "0.9.0";
       src = fetchzip {
         url = "https://github.com/Gzh0821/pvzg_site/releases/download/0.9.0/pvzge-0.9.0.zip"; 
-        hash = lib.fakeHash; 
+        hash = "sha256-BQtIhVtOJTxeCsFlwhaxqSalNSVcPhkkZZ2Dhga9dCQ="; 
       };
     }))
   ];
