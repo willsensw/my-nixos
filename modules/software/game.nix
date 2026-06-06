@@ -21,6 +21,7 @@
         url = "https://github.com/Gzh0821/pvzg_site/releases/download/0.9.0/pvzge-0.9.0.zip"; 
         hash = "sha256-BQtIhVtOJTxeCsFlwhaxqSalNSVcPhkkZZ2Dhga9dCQ="; 
       };
+      patchPhase = "";
     }))
   ];
 }
