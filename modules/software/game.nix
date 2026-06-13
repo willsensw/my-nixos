@@ -10,10 +10,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    mangohud
     protonup-qt
-    heroic
-    lutris
     pvzge
   ];
 }
