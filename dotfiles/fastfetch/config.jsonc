@@ -3,6 +3,8 @@
   "logo": {
     "type": "chafa",
     "source": "~/Pictures/hutao.jpg",
+    "width": 30,
+    "height": 15,
     "padding": {
       "top": 1,
       "left": 2,
