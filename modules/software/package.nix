@@ -22,6 +22,7 @@
     	alacritty
 		fastfetch
 		cmatrix
+		chafa
 
 		#ARCHIVER
 		unzip
