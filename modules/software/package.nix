@@ -20,11 +20,8 @@
 	
 		#TERMINAL SHOWCASE
     	alacritty
-		kitty
 		fastfetch
 		cmatrix
-		cava
-		sl
 
 		#ARCHIVER
 		unzip
