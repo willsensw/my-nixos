@@ -21,11 +21,10 @@
 
     hermes-agent = {
 	  url = "github:NousResearch/hermes-agent";
-	  inputs.nixpkgs.follows = "nixpkgs";
 	};
   };
 
-  outputs = { self, nixpkgs, lanzaboote, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, hermes-agent, lanzaboote, home-manager, ... }@inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       
