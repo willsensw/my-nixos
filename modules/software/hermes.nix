@@ -1,6 +1,12 @@
 { config, ... }:
 
 {
+    virtualisation.podman = {
+        enable = true;
+        dockerCompat = true; # Provides a docker alias if needed
+        defaultNetwork.settings.dns_enabled = true;
+    };
+
     services.hermes-agent = {
         enable = true;
         container = {
