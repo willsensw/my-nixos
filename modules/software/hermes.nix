@@ -18,8 +18,8 @@
             backend = "podman";
         };
 
-        settings.model.default = "anthropic/claude-sonnet-4";
-        environmentFiles = [ config.sops.secrets."hermes-env".path ];
+        settings.model.default = "openai/gpt-oss-20b:free";
+        environmentFiles = [ "/etc/hermes/api.env" ];
         addToSystemPackages = true;
     };
 
