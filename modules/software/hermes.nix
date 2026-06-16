@@ -9,7 +9,6 @@
 
         container.enable = true;
         container.hostUsers = [ "beimao" ];
-        addToSystemPackages = true;
     };
 }
 
