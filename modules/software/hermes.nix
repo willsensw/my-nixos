@@ -19,7 +19,7 @@
         };
 
         settings.model.default = "anthropic/claude-sonnet-4";
-        environmentFiles = [ "/etc/hermes/api.env" ];
+        environmentFiles = [ config.sops.secrets."hermes-env".path ];
         addToSystemPackages = true;
     };
 
