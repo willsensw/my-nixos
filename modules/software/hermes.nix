@@ -4,11 +4,8 @@
     services.hermes-agent = {
         enable = true;
         settings.model.default = "anthropic/claude-sonnet-4";
-        environmentFiles = [ config.sops.secrets."hermes-env".path ];
+        environmentFiles = [ "/etc/hermes/api.env" ];
         addToSystemPackages = true;
-
-        container.enable = true;
-        container.hostUsers = [ "beimao" ];
     };
 }
 
