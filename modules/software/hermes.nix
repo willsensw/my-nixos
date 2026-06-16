@@ -1,10 +1,13 @@
 { config, pkgs, ... }:
 
 {
-    virtualisation.podman = {
-        enable = true;
-        dockerCompat = true; # Provides a docker alias if needed
-        defaultNetwork.settings.dns_enabled = true;
+    virtualisation = {
+        docker.enable = false;
+        podman = {
+            enable = true;
+            dockerCompat = true; # Provides a docker alias if needed
+            defaultNetwork.settings.dns_enabled = true;
+        };
     };
 
     services.hermes-agent = {
@@ -14,8 +17,6 @@
             hostUsers = [ "beimao" ];
             backend = "podman";
         };
-
-        virtualisation.docker.enable = false;
 
         settings.model.default = "anthropic/claude-sonnet-4";
         environmentFiles = [ "/etc/hermes/api.env" ];
