@@ -11,7 +11,7 @@
         enable = true;
         container = {
             enable = true;
-            hostUsers = [ "your-username" ];
+            hostUsers = [ "beimao" ];
             backend = "podman";
         };
 
@@ -23,7 +23,7 @@
     };
 
     security.sudo.extraRules = [{
-        users = [ "willsen" ];
+        users = [ "beimao" ];
         commands = [{
           command = "/run/current-system/sw/bin/podman";
           options = [ "NOPASSWD" ];
