@@ -22,7 +22,6 @@
 
     environment.systemPackages = let
         gE = pkgs.gnomeExtensions;
-        gst = pkgs.gst_all_1;
     in
     with pkgs; [
         gnome-tweaks
@@ -30,13 +29,6 @@
         gE.appindicator
         gE.dash-to-dock
         gE.blur-my-shell
-        
-        (pkgs.callPackage ../software/hanabi.nix {})
-            gst.gstreamer
-            gst.gst-plugins-base
-            gst.gst-plugins-good
-            gst.gst-plugins-bad
-            gst.gst-libav
     ];
 
     environment.sessionVariables = {
