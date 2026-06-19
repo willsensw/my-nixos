@@ -31,7 +31,7 @@
         gE.dash-to-dock
         gE.blur-my-shell
         
-        (pkgs.callPackage ./modules/software/hanabi.nix {})
+        (pkgs.callPackage ../software/hanabi.nix {})
             gst.gstreamer
             gst.gst-plugins-base
             gst.gst-plugins-good
