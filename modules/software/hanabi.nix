@@ -16,7 +16,6 @@ stdenv.mkDerivation rec {
     ninja 
     glib 
     nodejs 
-    npm 
   ];
 
   buildInputs = with pkgs; [ 
