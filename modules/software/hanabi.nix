@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
     owner = "jeffshee";
     repo = "gnome-ext-hanabi";
     rev = "typescript"; # The dedicated GNOME 50 branch
-    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; # We will fix this hash in a moment
+    hash = "sha256-GPkmnmwCahP9tm3MeMhE06efel1RmQBM3Sf2ay0hhMI=";
   };
 
   nativeBuildInputs = with pkgs; [ 
