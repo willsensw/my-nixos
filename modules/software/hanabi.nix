@@ -11,11 +11,12 @@ stdenv.mkDerivation rec {
     hash = "sha256-GPkmnmwCahP9tm3MeMhE06efel1RmQBM3Sf2ay0hhMI=";
   };
 
+  npmDepsHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+
   nativeBuildInputs = with pkgs; [ 
     meson 
     ninja 
-    glib 
-    nodejs 
+    glib  
   ];
 
   buildInputs = with pkgs; [ 
