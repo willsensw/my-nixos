@@ -43,6 +43,7 @@
 		#Design
 		gimp3
 		blender
+		freecad
 
 		#Office
 		libreoffice-fresh
