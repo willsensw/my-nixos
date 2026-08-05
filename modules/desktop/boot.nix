@@ -5,7 +5,7 @@
   boot.plymouth = {
     enable = true;
     theme = "MikuPlymouth";  
-    themePackages = [ pkgs.mikuPlymouth ]; 
+    themePackages = [ (pkgs.mkMikuPlymouth [ 2 7 15 ]) ]; 
     
     # Note: If you have lots of RAM (16GB+) and want ALL 37 animations 
     # rotating instead of just 10, use this line instead:
