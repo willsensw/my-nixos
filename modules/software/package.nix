@@ -15,7 +15,7 @@
     	exfatprogs
     	sbctl
     	lon
-    	openboard
+    	# openboard
 		zoom-us
 	
 		#TERMINAL SHOWCASE
