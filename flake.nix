@@ -4,6 +4,11 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
 
+	mikuPlymouth = {
+      url = "github:Thang1191/MikuPlymouth";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,7 +29,7 @@
 	};
   };
 
-  outputs = { self, nixpkgs, hermes-agent, lanzaboote, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, hermes-agent, lanzaboote, home-manager, mikuPlymouth, ... }@inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       
@@ -34,6 +39,7 @@
       modules = [
         lanzaboote.nixosModules.lanzaboote
 		hermes-agent.nixosModules.default
+		mikuPlymouth.nixosModules.default
         ./configuration.nix
 
 	      home-manager.nixosModules.home-manager
