@@ -15,6 +15,7 @@
   # --- Silent Boot (Keep all of this exactly as it was) ---
   boot.consoleLogLevel = 0;
   boot.initrd.verbose = false;
+  boot.initrd.kernelModules = [ "i915" "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
   
   boot.kernelParams = [
     "quiet"
