@@ -4,17 +4,15 @@
   # --- Cinematic Boot Animation ---
   boot.plymouth = {
     enable = true;
-    theme = "lone"; 
-    themePackages = with pkgs; [
-      # By default, this package installs dozens of themes. 
-      # We use an override to only compile the exact one we want, saving build time and space.
-      (adi1090x-plymouth-themes.override {
-        selected_themes = [ "lone" ];
-      })
-    ];
+    theme = "MikuPlymouth";  
+    themePackages = [ pkgs.mikuPlymouth ]; 
+    
+    # Note: If you have lots of RAM (16GB+) and want ALL 37 animations 
+    # rotating instead of just 10, use this line instead:
+    # themePackages = [ pkgs.mikuPlymouthFull ];
   };
 
-  # --- Silent Boot (Required so text doesn't ruin the animation) ---
+  # --- Silent Boot (Keep all of this exactly as it was) ---
   boot.consoleLogLevel = 0;
   boot.initrd.verbose = false;
   
@@ -26,5 +24,5 @@
     "rd.systemd.show_status=false"
     "rd.udev.log_level=3"
     "udev.log_priority=3"
-  ];	
+  ];    
 }
