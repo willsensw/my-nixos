@@ -17,7 +17,6 @@
     	lon
     	# openboard
 		zoom-us
-		flatcam
 	
 		#TERMINAL SHOWCASE
     	alacritty
