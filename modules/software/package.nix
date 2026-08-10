@@ -17,6 +17,7 @@
     	lon
     	# openboard
 		zoom-us
+		bottles
 	
 		#TERMINAL SHOWCASE
     	alacritty
