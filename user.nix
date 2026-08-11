@@ -12,6 +12,7 @@
 			"networkmanager"
 			"plugdev"
 			"adbusers"
+        	"libvirtd"
 		];
 		packages = with pkgs; [
 			tree
