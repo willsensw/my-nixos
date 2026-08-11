@@ -60,13 +60,16 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-	security.rtkit.enable = true;
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
-	hardware.bluetooth.enable = true;
+  security.rtkit.enable = true;
 
-	nixpkgs.config.allowUnfree = true;
+  hardware.bluetooth.enable = true;
 
-	nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.allowUnfree = true;
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   system.stateVersion = "25.11";
 }
