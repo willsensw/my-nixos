@@ -6,7 +6,7 @@
       # Core Files
       ./hardware-configuration.nix
       ./user.nix
-	  ./wine.nix
+	  # ./wine.nix
 
       # Desktop
       ./modules/desktop/boot.nix
