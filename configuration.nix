@@ -61,6 +61,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
   programs.virt-manager.enable = true;
 
   security.rtkit.enable = true;
