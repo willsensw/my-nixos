@@ -4,8 +4,6 @@
     libvirtd.enable = true;
     spiceUSBRedirection.enable = true;
   };
-
-  users.groups.libvirtd.members = ["beimao"];
   
   programs.virt-manager.enable = true;
   
