@@ -17,6 +17,8 @@
     	lon
     	# openboard
 		zoom-us
+		gerbv
+		librecad
 	
 		#TERMINAL SHOWCASE
     	alacritty
