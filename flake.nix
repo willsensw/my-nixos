@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
 
-	mikuPlymouth = {
+	  mikuPlymouth = {
       url = "github:Thang1191/MikuPlymouth";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -25,8 +25,8 @@
     };
 
     hermes-agent = {
-	  url = "github:NousResearch/hermes-agent";
-	};
+	    url = "github:NousResearch/hermes-agent";
+	  };
   };
 
   outputs = { self, nixpkgs, hermes-agent, lanzaboote, home-manager, mikuPlymouth, ... }@inputs: {
@@ -38,17 +38,17 @@
 
       modules = [
         lanzaboote.nixosModules.lanzaboote
-		hermes-agent.nixosModules.default
-		mikuPlymouth.nixosModules.default
+        hermes-agent.nixosModules.default
+        mikuPlymouth.nixosModules.default
         ./configuration.nix
 
 	      home-manager.nixosModules.home-manager
 	      {
 	        home-manager = {
-	        useGlobalPkgs = true;
-	        useUserPackages = true;
-	        users.beimao = import ./home.nix;
-	        backupFileExtension = "backup";
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.beimao = import ./home.nix;
+            backupFileExtension = "backup";
 	        };
 	      }
       ];

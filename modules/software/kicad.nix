@@ -8,6 +8,8 @@
         # freerouting
       # ];
     # })
-    gerbv # Excellent gerber viewer to double-check your files before ordering
+    kicad
+    gerbv
+    librecad
   ];
 }

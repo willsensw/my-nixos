@@ -17,13 +17,12 @@
     	lon
     	# openboard
 		zoom-us
-		gerbv
-		librecad
 	
 		#TERMINAL SHOWCASE
     	alacritty
 		fastfetch
 		cmatrix
+		ranger
 		chafa
 
 		#ARCHIVER
@@ -38,9 +37,6 @@
 		thonny
 		arduino-ide
     	fritzing
-
-		#KICAD
-		kicad
 
 		#Design
 		gimp3
