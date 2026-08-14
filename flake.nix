@@ -52,7 +52,7 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.beimao = {
-              import = [ 
+              imports = [ 
                 ./home.nix
                 inputs.noctalia.homeModules.default 
               ];
