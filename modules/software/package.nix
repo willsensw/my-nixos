@@ -15,6 +15,7 @@
     	exfatprogs
     	sbctl
 		brightnessctl
+		orca
     	lon
     	# openboard
 		zoom-us
