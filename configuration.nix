@@ -15,6 +15,7 @@
       # ./modules/desktop/gnome.nix
       ./modules/desktop/zsh.nix
       ./modules/desktop/noctalia.nix
+	  ./modules/desktop/swaylock.nix
       ./modules/desktop/niri.nix
 
       # Hardware
