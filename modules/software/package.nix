@@ -15,6 +15,7 @@
     	exfatprogs
     	sbctl
 		brightnessctl
+		fuzzel
     	lon
     	# openboard
 		zoom-us
