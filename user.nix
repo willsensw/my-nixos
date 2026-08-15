@@ -11,6 +11,7 @@
 			"networkmanager"
 			"plugdev"
 			"adbusers"
+			"video"
         	# "libvirtd"
 		];
 		packages = with pkgs; [
