@@ -8,6 +8,11 @@
   # swaylock
   security.pam.services.swaylock = {};
 
+  programs.xwayland.enable = true;
+  environment.systemPackages = with pkgs; [
+    xwayland-satellite
+  ];
+
   environment.sessionVariables = {
     # Force Electron applications (Arduino IDE, Discord, VSCode) to use native Wayland
     NIXOS_OZONE_WL = "1";
