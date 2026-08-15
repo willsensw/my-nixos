@@ -61,6 +61,14 @@
     "beimao"
   ];
 
+  xdg.portal = {
+    enable = true;
+    config.common.default = "*";
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+    ];
+  };
+
   time.timeZone = "Asia/Pontianak";
 
   i18n.defaultLocale = "en_US.UTF-8";
