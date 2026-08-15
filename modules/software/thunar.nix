@@ -1,7 +1,7 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, ... }:
 
 {
-	environment.systemPackages = [
-    	thunar
-  	];
+    environment.systemPackages = with pkgs; [
+        thunar
+    ];
 }
