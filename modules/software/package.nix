@@ -16,6 +16,7 @@
     	sbctl
 		brightnessctl
 		orca
+		swaylock
     	lon
     	# openboard
 		zoom-us
