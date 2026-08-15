@@ -63,9 +63,15 @@
 
   xdg.portal = {
     enable = true;
-    config.common.default = "*";
+    xdgOpenUsePortal = true;
+    config = {
+      niri.default = [ "gtk" ];
+      common.default = [ "gtk" ];
+    };
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
+      # Optional: Niri's specific portal for screen sharing/casting
+      xdg-desktop-portal-gnome 
     ];
   };
 
