@@ -11,5 +11,8 @@
   	};
 
 	# This prevents the service from starting automatically on boot
-  	systemd.services.ollama.wantedBy = lib.mkForce [ ];
+  	systemd.services = {
+		ollama.wantedBy = lib.mkForce [ ];
+		open-webui.wantedBy = lib.mkForce [ ];
+	};
 }
