@@ -40,6 +40,10 @@
 		arduino-ide
     	fritzing
 
+		#3D Slicer
+		cura-appiamge
+		orca-slicer
+
 		#Design
 		gimp3
 		blender
