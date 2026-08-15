@@ -41,7 +41,7 @@
     	fritzing
 
 		#3D Slicer
-		cura-appiamge
+		cura-appimage
 		orca-slicer
 
 		#Design
