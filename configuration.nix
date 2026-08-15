@@ -64,10 +64,6 @@
   xdg.portal = {
     enable = true;
     xdgOpenUsePortal = true;
-    config = {
-      niri.default = [ "gtk" ];
-      common.default = [ "gtk" ];
-    };
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
       # Optional: Niri's specific portal for screen sharing/casting
