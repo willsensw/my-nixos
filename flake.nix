@@ -14,7 +14,6 @@
 
 	  mikuPlymouth = {
       url = "github:Thang1191/MikuPlymouth";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
@@ -24,7 +23,6 @@
     
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     lanzaboote = {
