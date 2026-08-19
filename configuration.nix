@@ -25,7 +25,6 @@
       ./modules/software/nvim.nix
       ./modules/software/ollama.nix
       ./modules/software/package.nix
-      ./modules/software/hermes.nix
       ./modules/software/zen.nix
       ./modules/software/kicad.nix
       ./modules/software/thunar.nix
