@@ -13,15 +13,12 @@
 		btop
     	exfatprogs
     	sbctl
-		wireplumber
-		brightnessctl
     	lon
     	# openboard
 		zoom-us
 	
 		#TERMINAL SHOWCASE
 		kitty
-    	alacritty
 		fastfetch
 		cmatrix
 

@@ -10,8 +10,9 @@
 
       # Desktop
       ./modules/desktop/sddm.nix
+      ./modules/desktop/kde.nix
       ./modules/desktop/zsh.nix
-      ./modules/desktop/niri.nix
+      # ./modules/desktop/niri.nix
 
       # Hardware
       ./modules/hardware/nvidia.nix
