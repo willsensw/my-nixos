@@ -6,7 +6,7 @@
       # Core Files
       ./hardware-configuration.nix
       ./user.nix
-	    ./vm.nix
+	    # ./vm.nix
 
       # Desktop
       ./modules/desktop/boot.nix
