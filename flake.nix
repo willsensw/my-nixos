@@ -8,11 +8,11 @@
       url = "github:noctalia-dev/noctalia/cachix";
     };
 
-	qylock = {
-	  url = "github:Darkkal44/qylock";
-	};
+    qylock = {
+      url = "github:Darkkal44/qylock";
+    };
 
-	mikuPlymouth = {
+	  mikuPlymouth = {
       url = "github:Thang1191/MikuPlymouth";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -31,13 +31,9 @@
       url = "github:nix-community/lanzaboote/v1.0.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    hermes-agent = {
-	    url = "github:NousResearch/hermes-agent";
-	  };
   };
 
-  outputs = { self, nixpkgs, hermes-agent, lanzaboote, home-manager, mikuPlymouth, noctalia, qylock, ... }@inputs: {
+  outputs = { self, nixpkgs, lanzaboote, home-manager, mikuPlymouth, noctalia, qylock, ... }@inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       
@@ -46,9 +42,8 @@
 
       modules = [
         lanzaboote.nixosModules.lanzaboote
-        hermes-agent.nixosModules.default
         mikuPlymouth.nixosModules.default
-		qylock.nixosModules.default
+		    qylock.nixosModules.default
         ./configuration.nix
 
 	      home-manager.nixosModules.home-manager

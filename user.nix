@@ -12,7 +12,7 @@
 			"plugdev"
 			"adbusers"
 			"video"
-        	# "libvirtd"
+        	"libvirtd"
 		];
 		packages = with pkgs; [
 			tree

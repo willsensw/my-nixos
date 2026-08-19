@@ -4,7 +4,6 @@
 	# https://search.nixos.org/
 	environment.systemPackages = let
 		kde = pkgs.kdePackages;
-		py = pkgs.python313;
 	in
 	with pkgs; [
 		#Mix
@@ -16,14 +15,13 @@
     	sbctl
 		brightnessctl
     	lon
-    	openboard
+    	# openboard
 		zoom-us
 	
 		#TERMINAL SHOWCASE
     	alacritty
 		fastfetch
 		cmatrix
-		chafa
 
 		#ARCHIVER
 		unzip
