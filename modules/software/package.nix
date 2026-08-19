@@ -15,16 +15,14 @@
     	exfatprogs
     	sbctl
 		brightnessctl
-		orca
     	lon
-    	# openboard
+    	openboard
 		zoom-us
 	
 		#TERMINAL SHOWCASE
     	alacritty
 		fastfetch
 		cmatrix
-		ranger
 		chafa
 
 		#ARCHIVER
@@ -45,7 +43,6 @@
 		orca-slicer
 
 		#Design
-		gimp3
 		blender
 		freecad
 
