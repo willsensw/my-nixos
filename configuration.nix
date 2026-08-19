@@ -6,13 +6,12 @@
       # Core Files
       ./hardware-configuration.nix
       ./user.nix
-	    # ./vm.nix
+	    ./vm.nix
 
       # Desktop
       ./modules/desktop/sddm.nix
       ./modules/desktop/kde.nix
       ./modules/desktop/zsh.nix
-      # ./modules/desktop/niri.nix
 
       # Hardware
       ./modules/hardware/nvidia.nix
@@ -25,7 +24,6 @@
       ./modules/software/package.nix
       ./modules/software/zen.nix
       ./modules/software/kicad.nix
-      ./modules/software/thunar.nix
 
       # Others
       ./modules/others/flatpak.nix
@@ -64,7 +62,6 @@
     xdgOpenUsePortal = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
-      # Optional: Niri's specific portal for screen sharing/casting
       xdg-desktop-portal-gnome 
     ];
   };

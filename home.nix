@@ -96,13 +96,7 @@
 
   xdg.configFile = {
     "fastfetch".source = ./dotfiles/fastfetch;
-    "ranger".source    = ./dotfiles/ranger;
     "nvim".source      = ./dotfiles/nvim;
     "kitty".source     = ./dotfiles/kitty;
-    "hypr".source      = ./dotfiles/hypr;
-    "rofi".source      = ./dotfiles/rofi;
-    "swaync".source    = ./dotfiles/swaync;
-    "wal".source       = ./dotfiles/wal;
-    "wlogout".source   = ./dotfiles/wlogout;
   };
 }
