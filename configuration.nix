@@ -9,7 +9,6 @@
 	    # ./vm.nix
 
       # Desktop
-      ./modules/desktop/boot.nix
       ./modules/desktop/sddm.nix
       ./modules/desktop/zsh.nix
       ./modules/desktop/noctalia.nix

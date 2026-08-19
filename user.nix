@@ -4,7 +4,7 @@
 	users.users.beimao = {
 		isNormalUser = true;
 		shell = pkgs.zsh;
-		description = "Electronics Engineer";
+		description = "EsWe";
 		extraGroups = [
 			"wheel"
 			"dialout"

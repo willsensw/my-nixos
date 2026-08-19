@@ -19,6 +19,7 @@
 		zoom-us
 	
 		#TERMINAL SHOWCASE
+		kitty
     	alacritty
 		fastfetch
 		cmatrix

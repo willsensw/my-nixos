@@ -1,13 +1,15 @@
 { config, pkgs, ... }:
 
 {
-    services.displayManager.sddm = {
-        enable = true;
-        wayland.enable = true;
-    };
-  
-    programs.qylock = {
-        enable = true;
-        theme = "wuwa"; 
-    };
+  services.displayManager.sddm = {
+    enable = true;
+    theme = "catppuccin-mocha-mauve";
+  };
+
+  environment.systemPackages = [ 
+    (pkgs.catppuccin-sddm.override {
+      flavor = "mocha";
+      accent = "mauve";
+    })
+  ];
 }
