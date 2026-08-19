@@ -13,6 +13,7 @@
 		btop
     	exfatprogs
     	sbctl
+		wpctl
 		brightnessctl
     	lon
     	# openboard

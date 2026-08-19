@@ -41,11 +41,6 @@
     };
   };
 
-  programs.noctalia = { 
-    enable = true; 
-    systemd.enable = true;
-  };
-
 	programs.zsh = {
   	enable = true;
   };

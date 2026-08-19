@@ -11,7 +11,6 @@
       # Desktop
       ./modules/desktop/sddm.nix
       ./modules/desktop/zsh.nix
-      ./modules/desktop/noctalia.nix
       ./modules/desktop/niri.nix
 
       # Hardware

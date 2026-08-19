@@ -4,10 +4,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
 
-    noctalia = {
-      url = "github:noctalia-dev/noctalia/cachix";
-    };
-
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,7 +19,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, lanzaboote, home-manager, noctalia, ... }@inputs: {
+  outputs = { self, nixpkgs, lanzaboote, home-manager, ... }@inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       
@@ -42,7 +38,6 @@
             users.beimao = {
               imports = [ 
                 ./home.nix
-                inputs.noctalia.homeModules.default 
               ];
             };
             backupFileExtension = "backup";
