@@ -7,7 +7,6 @@
     environment.plasma6.excludePackages = with pkgs.kdePackages; [
         konsole
         kate
-        kwrite
         elisa
         discover
         plasma-browser-integration
