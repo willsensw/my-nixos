@@ -12,10 +12,10 @@
     	'';
 
 		shellAliases = {
-			ollama-on = "sudo systemctl start ollama open-webui";
-			ollama-off = "sudo systemctl stop ollama open-webui";
-			llama = "ollama run llama3.1:8b";
-			deepseek = "ollama run deepseek-r1:8b";
+			# ollama-on = "sudo systemctl start ollama open-webui";
+			# ollama-off = "sudo systemctl stop ollama open-webui";
+			# llama = "ollama run llama3.1:8b";
+			# deepseek = "ollama run deepseek-r1:8b";
 
 			rebuild = "sudo nixos-rebuild switch --flake github:willsensw/my-nixos#default --refresh";
 			garbage = "sudo nix-collect-garbage -d";
