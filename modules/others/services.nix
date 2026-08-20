@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
 	services = {
@@ -14,5 +14,10 @@
 		blueman.enable = true;
 		printing.enable = true;
 		libinput.enable = true;
+		
+		# STM32
+		udev.packages = with pkgs; [ 
+			stlink 
+		];
 	};
 }
