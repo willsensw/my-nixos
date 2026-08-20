@@ -6,9 +6,10 @@
       # Core Files
       ./hardware-configuration.nix
       ./user.nix
-	  ./vm.nix
+      ./vm.nix
 
       # Desktop
+      ./modules/desktop/xfce.nix
       ./modules/desktop/sddm.nix
       ./modules/desktop/kde.nix
       ./modules/desktop/zsh.nix
@@ -53,13 +54,6 @@
     "root"
     "beimao"
   ];
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-    ];
-  };
 
   time.timeZone = "Asia/Pontianak";
 
