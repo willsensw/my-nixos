@@ -10,8 +10,6 @@
 
       # Desktop
       ./modules/desktop/xfce.nix
-      # ./modules/desktop/sddm.nix
-      # ./modules/desktop/kde.nix
       ./modules/desktop/zsh.nix
 
       # Hardware
