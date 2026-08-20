@@ -6,7 +6,7 @@
       # Core Files
       ./hardware-configuration.nix
       ./user.nix
-	    ./vm.nix
+	  ./vm.nix
 
       # Desktop
       ./modules/desktop/sddm.nix
@@ -22,15 +22,12 @@
       ./modules/software/game.nix
       ./modules/software/nvim.nix
       ./modules/software/package.nix
-      ./modules/software/zen.nix
       ./modules/software/kicad.nix
 
       # Others
       ./modules/others/flatpak.nix
       ./modules/others/font.nix
-      ./modules/others/python.nix
       ./modules/others/services.nix
-      ./modules/others/stm32.nix
 
       # AI
       # ./modules/ai/ollama.nix
