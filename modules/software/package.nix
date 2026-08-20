@@ -16,6 +16,9 @@
     	lon
     	# openboard
 		zoom-us
+
+		#BROWSER
+		inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 	
 		#TERMINAL SHOWCASE
 		kitty
