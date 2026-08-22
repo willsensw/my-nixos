@@ -1,7 +1,8 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  programs.adb.enable = true;
-
-  environment.systemPackages = [ pkgs.scrcpy ];
+  environment.systemPackages = with pkgs; [
+    scrcpy
+    android-tools
+  ];
 }
