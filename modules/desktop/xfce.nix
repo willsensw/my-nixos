@@ -9,7 +9,7 @@
 
   services.displayManager.defaultSession = "xfce";
 
-  environment.xfce.excludePackages = with pkgs.xfce; [
+  environment.xfce.excludePackages = with pkgs; [
     mousepad            # Default text editor
     parole              # Default media player
     ristretto           # Default image viewer
