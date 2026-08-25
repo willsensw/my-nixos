@@ -55,7 +55,6 @@
 
 		#Media
 		vlc
-		obs-studio
 
 		#KDE-Apps
 		kde.kdenlive
