@@ -18,7 +18,8 @@
 
       # Software
       ./modules/software/blender.nix
-      ./modules/software/game.nix
+	  ./modules/software/obs.nix
+	  ./modules/software/game.nix
       ./modules/software/nvim.nix
       ./modules/software/package.nix
       ./modules/software/kicad.nix
