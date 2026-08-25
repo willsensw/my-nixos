@@ -29,9 +29,6 @@
       ./modules/others/flatpak.nix
       ./modules/others/font.nix
       ./modules/others/services.nix
-
-      # AI
-      # ./modules/ai/ollama.nix
     ];
 
   boot = {
