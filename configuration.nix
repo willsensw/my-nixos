@@ -56,6 +56,12 @@
     "/nix".options = [ "compress=zstd" "noatime" ];
   };
 
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "monthly";
+    fileSystems = [ "/" ]; 
+  };
+
   zramSwap.enable = true;
 
   networking = {
