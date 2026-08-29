@@ -31,15 +31,15 @@
       ./modules/others/services.nix
     ];
 
-  boot = {
-    loader = {
-      systemd-boot.enable = lib.mkForce false;
-      efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot = {
+	  enable = lib.mkForce false;
     };
-    lanzaboote = {
-      enable = true;
-      pkiBundle = "/var/lib/sbctl";
+	limine = {
+	  enable = true;
+      secureBoot.enable = true;
     };
+	efi.canTouchEfiVariables = true;
   };
 
   networking = {
