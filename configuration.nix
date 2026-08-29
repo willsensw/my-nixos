@@ -50,6 +50,12 @@
 	efi.canTouchEfiVariables = true;
   };
 
+  fileSystems = {
+    "/".options = [ "compress=zstd" ];
+    "/home".options = [ "compress=zstd" ];
+    "/nix".options = [ "compress=zstd" "noatime" ];
+  };
+
   zramSwap.enable = true;
 
   networking = {
