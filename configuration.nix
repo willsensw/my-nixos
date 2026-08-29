@@ -50,6 +50,8 @@
 	efi.canTouchEfiVariables = true;
   };
 
+  zramSwap.enable = true;
+
   networking = {
 		networkmanager.enable = true;
 		hostName = "nixos";
