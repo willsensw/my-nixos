@@ -12,14 +12,9 @@
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
     };
-
-    lanzaboote = {
-      url = "github:nix-community/lanzaboote/v1.0.0";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, lanzaboote, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       
@@ -27,7 +22,6 @@
       specialArgs = { inherit inputs; };
 
       modules = [
-        lanzaboote.nixosModules.lanzaboote
         ./configuration.nix
 
 	      home-manager.nixosModules.home-manager
@@ -41,8 +35,8 @@
               ];
             };
             backupFileExtension = "backup";
-	        };
-	      }
+	      };
+	    }
       ];
     };
   };
