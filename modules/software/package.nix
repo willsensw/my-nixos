@@ -15,7 +15,6 @@
     	sbctl
     	lon
 		zoom-us
-		droidcam
 
 		#BROWSER
 		inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
