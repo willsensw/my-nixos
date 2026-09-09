@@ -14,6 +14,7 @@
     	exfatprogs
     	sbctl
     	lon
+        droidcam
 		zoom-us
 
 		#BROWSER
