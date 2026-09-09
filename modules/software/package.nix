@@ -14,7 +14,6 @@
     	exfatprogs
     	sbctl
     	lon
-    	# openboard
 		zoom-us
 
 		#BROWSER
@@ -55,9 +54,6 @@
 
 		#Media
 		vlc
-
-		#KDE-Apps
-		kde.kdenlive
 
 		#C Compiler
 		gcc
