@@ -57,6 +57,20 @@
     "/swap".options = [ "noatime" ];
   };
 
+  fileSystems."/run/media/beimao/DATA" = {
+	device = "/dev/nvme0n1p5";
+	fsType = "ntfs3";
+	options = [ 
+	  "rw" 
+	  "uid=1000" 
+	  "gid=100" 
+	  "dmask=022" 
+	  "fmask=133" 
+	  "nofail" 
+	  "force" 
+	];
+  };
+
   boot.supportedFilesystems = [ "ntfs3" ];
 
   swapDevices = [{
