@@ -11,6 +11,10 @@
       obs-move-transition
       advanced-scene-switcher
       obs-multi-rtmp
+      obs-scale-to-sound
+      obs-composite-blur
+      obs-vertical-canvas
+      obs-aitum-multistream
     ];
   };
 }
