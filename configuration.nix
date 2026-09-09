@@ -57,6 +57,8 @@
     "/swap".options = [ "noatime" ];
   };
 
+  boot.supportedFilesystems = [ "ntfs3" ];
+
   swapDevices = [{
     device = "/swap/swapfile";
     size = 8*1024;
