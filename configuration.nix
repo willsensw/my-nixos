@@ -24,6 +24,7 @@
       ./modules/software/package.nix
       ./modules/software/kicad.nix
       ./modules/software/scrcpy.nix
+      ./modules/software/droidcam.nix
 
       # Others
       ./modules/others/flatpak.nix
