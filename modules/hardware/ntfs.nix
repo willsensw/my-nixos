@@ -14,6 +14,7 @@
             "fmask=022"
             "users"
             "nofail"
+            "force"
             "exec"
         ];
     };
