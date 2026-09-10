@@ -4,6 +4,10 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
+    extraPackages = with pkgs; [
+      intel-media-driver # Enables VAAPI and QSV for modern Intel CPUs
+      vpl-gpu-rt         # Provides modern Quick Sync Video runtime for OBS
+    ];
   };
 
   services.xserver.videoDrivers = [ "nvidia" ];
