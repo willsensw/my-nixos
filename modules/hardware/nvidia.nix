@@ -13,7 +13,7 @@
     powerManagement.enable = true;
     powerManagement.finegrained = true;
     # RTX 2050, 'false' = proprietary
-    open = true;
+    open = false;
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
     prime = {
