@@ -1,7 +1,7 @@
 { config, lib, ... }:
 
 {
-    boot.supportedFilesystems = [ "ntfs" ];
+    boot.supportedFilesystems = [ "ntfs3" ];
 
     fileSystems."/run/media/beimao/DATA" = {
         device = "/dev/nvme0n1p5";
