@@ -22,6 +22,7 @@
             ./modules/hardware/zram.nix
 
         # Others
+            ./modules/others/python.nix
             ./modules/others/flatpak.nix
             ./modules/others/font.nix
             ./modules/others/important.nix
