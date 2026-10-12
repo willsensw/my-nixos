@@ -12,6 +12,8 @@
       advanced-scene-switcher
       obs-multi-rtmp
       obs-scale-to-sound
+      obs-source-clone
+      obs-stroke-glow-shadow
       obs-composite-blur
       obs-vertical-canvas
       obs-aitum-multistream
