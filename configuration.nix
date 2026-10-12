@@ -15,7 +15,6 @@
 
         # Hardware
             ./modules/hardware/bluetooth.nix
-            ./modules/hardware/btrfs.nix
             ./modules/hardware/nvidia.nix
             ./modules/hardware/printer.nix
             ./modules/hardware/zram.nix
