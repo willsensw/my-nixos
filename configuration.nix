@@ -16,7 +16,6 @@
         # Hardware
             ./modules/hardware/bluetooth.nix
             ./modules/hardware/btrfs.nix
-            ./modules/hardware/ntfs.nix
             ./modules/hardware/nvidia.nix
             ./modules/hardware/printer.nix
             ./modules/hardware/zram.nix
@@ -36,6 +35,5 @@
             ./modules/software/package.nix
             ./modules/software/kicad.nix
             ./modules/software/scrcpy.nix
-            ./modules/software/droidcam.nix
     ];
 }
