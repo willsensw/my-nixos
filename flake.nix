@@ -9,10 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
-    zen-browser = {
-      url = "github:youwen5/zen-browser-flake";
-    };
-
 	helium = {
 	  url = "github:schembriaiden/helium-browser-nix-flake";
 	  inputs.nixpkgs.follows = "nixpkgs";
