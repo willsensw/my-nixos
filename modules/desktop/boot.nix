@@ -18,9 +18,8 @@
             '';
 			style = {
 				wallpapers = [
-					/home/beimao/Pictures/wpp1.jpg
+					~/Pictures/wpp1.jpg
 				];
-				wallpaperStyle = "stretched";
 			};
         };
         efi.canTouchEfiVariables = true;
