@@ -19,5 +19,7 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
     gnomeExtensions.arc-menu
+    gnomeExtensions.appindicator
+    gnome-tweaks
   ];
 }
