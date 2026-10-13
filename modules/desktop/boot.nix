@@ -16,11 +16,6 @@
                     protocol: efi
                     path: boot():/EFI/Microsoft/Boot/bootmgfw.efi
             '';
-			style = {
-				wallpaper = [
-					~/Pictures/wpp1.jpg
-				];
-			};
         };
         efi.canTouchEfiVariables = true;
     };
