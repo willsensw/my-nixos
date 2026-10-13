@@ -12,10 +12,16 @@
             panicOnChecksumMismatch = true;
             maxGenerations = 3;
             extraEntries = ''
-                /Windows 11
+                /WIN 11
                     protocol: efi
                     path: boot():/EFI/Microsoft/Boot/bootmgfw.efi
             '';
+			style = {
+				wallpapers = [
+					/home/beimao/Pictures/wpp1.jpg
+				];
+				wallpaperStyle = "stretched";
+			};
         };
         efi.canTouchEfiVariables = true;
     };
