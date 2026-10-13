@@ -17,7 +17,7 @@
                     path: boot():/EFI/Microsoft/Boot/bootmgfw.efi
             '';
 			style = {
-				wallpapers = [
+				wallpaper = [
 					~/Pictures/wpp1.jpg
 				];
 			};
