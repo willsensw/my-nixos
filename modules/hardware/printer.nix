@@ -6,7 +6,6 @@
 		enable = true;
 		drivers = with pkgs; [
 			epson_201207w
-			epson-escpr
 			hplipWithPlugin
 		];
 	};
