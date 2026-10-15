@@ -11,7 +11,7 @@
             ./modules/desktop/boot.nix
             ./modules/desktop/vm.nix
             ./modules/desktop/cosmic.nix
-            ./modules/desktop/gnome.nix
+            # ./modules/desktop/gnome.nix
             ./modules/desktop/zsh.nix
 
         # Hardware
