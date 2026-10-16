@@ -18,7 +18,7 @@
 
 		#BROWSER
 		(pkgs.symlinkJoin {
-		name = "helium-x11-wrapped";
+			name = "helium-x11-wrapped";
 			paths = [ inputs.helium.packages.${system}.default ];
 			buildInputs = [ makeWrapper ];
 			postBuild = ''
