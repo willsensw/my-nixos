@@ -32,6 +32,7 @@
             ./modules/software/game.nix
             ./modules/software/nvim.nix
             ./modules/software/package.nix
+            ./modules/software/helium.nix
             ./modules/software/kicad.nix
             ./modules/software/scrcpy.nix
     ];
