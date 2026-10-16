@@ -5,10 +5,6 @@
     desktopManager.cosmic.enable = true;
     displayManager = {
       cosmic-greeter.enable = true;
-      autoLogin = {
-        enable = true;
-        user = "beimao";
-      };
     };
     system76-scheduler.enable = true;
   };
