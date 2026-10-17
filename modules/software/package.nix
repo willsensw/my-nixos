@@ -16,9 +16,6 @@
     	lon
 		zoom-us
 
-		#BOTTLES
-		(bottles.override { removeWarningPopup = true; })
-
 		#TERMINAL SHOWCASE
 		kitty
 		fastfetch
