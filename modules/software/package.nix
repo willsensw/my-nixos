@@ -10,6 +10,7 @@
 		vim
 		neovim
 		git
+		htop
 		btop
     	exfatprogs
     	sbctl
