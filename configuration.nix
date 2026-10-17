@@ -10,7 +10,8 @@
         # Desktop
             ./modules/desktop/boot.nix
             ./modules/desktop/vm.nix
-            ./modules/desktop/cosmic.nix
+            ./modules/desktop/xfce.nix
+            # ./modules/desktop/cosmic.nix
             ./modules/desktop/zsh.nix
 
         # Hardware
