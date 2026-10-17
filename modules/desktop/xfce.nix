@@ -23,6 +23,10 @@
     # xfce4-taskmanager
     xfce4-terminal 
   ];
+
+  environment.systemPackages = with pkgs; [
+    flameshot
+  ];
   
-  services.picom.enable = true; # Highly recommended for preventing screen tearing
+  services.picom.enable = true;
 }
