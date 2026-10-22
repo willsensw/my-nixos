@@ -40,6 +40,7 @@
 		orca-slicer
 
 		#Design
+		inkscape
 		blender
 		freecad
 
