@@ -11,7 +11,7 @@
   services.displayManager.defaultSession = "xfce";
   services.xserver.desktopManager.xfce.enableWaylandSession = false;
 
-  environment.xfce.excludePackages = with pkgs.xfce; [
+  environment.xfce.excludePackages = with pkgs; [
     mousepad
     parole
     # ristretto
