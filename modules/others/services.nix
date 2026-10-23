@@ -13,8 +13,15 @@
 		};
 		libinput.enable = true;
 		
-		udev.packages = with pkgs; [ 
-			stlink	# STM32
+		udev.packages =  [ 
+			pkgs.stlink	# STM32
+			(pkgs.writeTextFile {
+				name = "usbasp-udev-rules";
+				text = ''
+				  SUBSYSTEM=="usb", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", MODE="0666", TAG+="uaccess"
+				'';
+				destination = "/etc/udev/rules.d/99-usbasp.rules";
+			})
 		];
 	};
 }
