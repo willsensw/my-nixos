@@ -24,7 +24,8 @@
 
 		#ARCHIVER
 		zip
-		tar
+		gzip
+		xz
 		unzip
 		unrar
 		xarchiver
