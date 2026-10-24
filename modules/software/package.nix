@@ -23,6 +23,8 @@
 		cmatrix
 
 		#ARCHIVER
+		zip
+		tar
 		unzip
 		unrar
 		xarchiver
