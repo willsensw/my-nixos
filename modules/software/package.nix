@@ -48,7 +48,7 @@
 		freecad
 
 		#Office
-		libreoffice-fresh
+		libreoffice
 
 		#Communication
 		vesktop
