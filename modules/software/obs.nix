@@ -13,7 +13,7 @@
       obs-multi-rtmp
       obs-scale-to-sound
       obs-source-clone
-      obs-stroke-glow-shadow
+      #obs-stroke-glow-shadow
       obs-composite-blur
       obs-vertical-canvas
       obs-aitum-multistream
