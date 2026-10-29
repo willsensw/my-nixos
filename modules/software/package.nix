@@ -63,5 +63,8 @@
 
 		#MUSIC
 		folia-major
+
+		#YT
+		ytdownloader
 	];
 }
