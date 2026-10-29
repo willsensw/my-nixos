@@ -60,5 +60,8 @@
 		#C Compiler
 		gcc
 		clang
+
+		#MUSIC
+		folia-major
 	];
 }
