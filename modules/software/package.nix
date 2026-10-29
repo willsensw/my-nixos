@@ -62,6 +62,6 @@
 		clang
 
 		#MUSIC
-		#folia-major
+		folia-major
 	];
 }
