@@ -26,6 +26,7 @@
 
   environment.systemPackages = with pkgs; [
     xfce4-whiskermenu-plugin
+    plank
     # flameshot
     # gradia
   ];
