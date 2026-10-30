@@ -17,7 +17,7 @@
     # ristretto
     xfce4-appfinder
     # xfce4-notifyd
-    xfce4-screenshooter
+    # xfce4-screenshooter
     # xfce4-session
     # xfce4-settings
     # xfce4-taskmanager
@@ -26,7 +26,7 @@
 
   environment.systemPackages = with pkgs; [
     # flameshot
-    gradia
+    # gradia
   ];
   
   services.picom.enable = true;
