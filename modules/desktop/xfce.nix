@@ -25,7 +25,8 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    flameshot
+    # flameshot
+    gradia
   ];
   
   services.picom.enable = true;
