@@ -32,4 +32,21 @@
   ];
   
   services.picom.enable = true;
+
+  environment.sessionVariables = {
+    # Memaksa aplikasi berbasis GTK (seperti Arduino IDE baru, GIMP, dll) menggunakan X11
+    GDK_BACKEND = "x11";
+  
+    # Memaksa aplikasi berbasis Qt (seperti KiCad, OBS Studio, VLC) menggunakan X11
+    QT_QPA_PLATFORM = "xcb";
+  
+    # Memaksa aplikasi berbasis SDL2/OpenGL (seperti Blender dan beberapa game) menggunakan X11
+    SDL_VIDEODRIVER = "x11";
+  
+    # Memaksa pustaka Clutter untuk menggunakan backend X11
+    CLUTTER_BACKEND = "x11";
+  
+    # Mengosongkan variabel Wayland untuk aplikasi yang keras kepala agar mendeteksi X11 sebagai satu-satunya opsi
+    WAYLAND_DISPLAY = "";
+  };
 }
