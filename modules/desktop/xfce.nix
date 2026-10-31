@@ -17,12 +17,9 @@
 
     displayManager = {
       defaultSession = "xfce";
-      lightdm = {
+      autoLogin = {
         enable = true;
-        autoLogin = {
-          enable = true;
-          user = "beimao";
-        };
+        user = "beimao";
       };
     };
   };
