@@ -3,7 +3,6 @@
 {
   services = {
     picom.enable = true;
-    displayManager.defaultSession = "xfce";
     
     xserver = {
       enable = true;
@@ -14,8 +13,11 @@
           enableWaylandSession = false;
         };
       };
-      
-      displayManager.lightdm = {
+    };
+
+    displayManager = {
+      defaultSession = "xfce";
+      lightdm = {
         enable = true;
         autoLogin = {
           enable = true;
