@@ -38,6 +38,10 @@
 		arduino-ide
     	fritzing
 
+		#STM32
+		stm32cubemx
+		vscode
+
 		#3D Slicer
 		cura-appimage
 		orca-slicer
